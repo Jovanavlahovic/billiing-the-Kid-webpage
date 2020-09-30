@@ -72,40 +72,67 @@
       <h2>pricing</h2>
       <p>Our services prices</p>
       <table>
-      <thead>
-        <tr>
-          <th colspan="2"></th>
-          <th colspan="2" class="orange">Price</th>
-        </tr>
-        <tr>
-        <th></th>
-        <th></th>
-        <th class="gray">1 Year</th>
-        <th class="gray">1 Years</th>
-      </tr>
-      </thead>
-      <tbody>
-         <tr>
-        <td rowspan="3" class="orange">Location</td>
-        <td class="gray">Startup</td>
-        <td>$3000</td>
-        <td>$3000</td>
-      </tr>
-      <tr>
-        <td class="gray">Small Business</td>
-        <td>$3000</td>
-        <td>$3000</td>
-      </tr>
-      <tr>
-        <td class="gray">Medium company</td>
-        <td>$3000</td>
-        <td>$3000</td>
-      </tr>
-      </tbody>
-    </table>
-    <button class="buttons">
-        Check the prices
-    </button>
+        <thead>
+          <tr>
+            <th colspan="2"></th>
+            <th colspan="2" class="orange">Price</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th class="gray">1 Year</th>
+            <th class="gray">1 Years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3" class="orange">Location</td>
+            <td class="gray">Startup</td>
+            <td>$3000</td>
+            <td>$3000</td>
+          </tr>
+          <tr>
+            <td class="gray">Small Business</td>
+            <td>$3000</td>
+            <td>$3000</td>
+          </tr>
+          <tr>
+            <td class="gray">Medium company</td>
+            <td>$3000</td>
+            <td>$3000</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="buttons">Check the prices</button>
     </section>
+    <section class="contact">
+      <h2>contact us</h2>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11233.600212232555!2d19.83121635!3d45.25992335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1601449962435!5m2!1ssr!2srs"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <div class="foot-right">
+        <form action="/action_page.php" method="get">
+          <select name="gender" id="gender">
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+          </select>
+          <input type="text" placeholder="Your name" id="name" />
+          <input type="email" placeholder="Your email" id="email" />
+          <textarea name="message" id="message" rows="5"></textarea>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2020 <span>Billing the Kid</span></p>
+    </footer>
   </body>
 </html>
