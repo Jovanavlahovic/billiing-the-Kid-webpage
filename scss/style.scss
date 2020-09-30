@@ -4,13 +4,14 @@
 @include main;
 
 section {
-  padding: 3em 20em;
+  padding: 3em 15em;
   text-align: center;
 }
 
 h2 {
   color: $font-color;
   text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 header,
@@ -41,40 +42,162 @@ header {
     }
   }
 
-  button{
-      float: right;
-      padding: 11px;
-      background-color: $main-red;
-      color: #fff;
-      border: none;
-      cursor: pointer;
+  button {
+    float: right;
+    padding: 11px;
+    background-color: $main-red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 
-      &:hover{
-          background-color: $color-hover;
-          border: 1px solid white;
-          color: $dark-blue;
-      }
+    &:hover {
+      background-color: $color-hover;
+      border: 1px solid white;
+      color: $dark-blue;
+    }
   }
 }
 
-main{
-    background-image: url('../slike/intro.jpg');
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
-    color: rgba(#fff, 0.9);
-    position: relative;
+main {
+  background-image: url("../slike/intro.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
 }
 
-.main-text{
-    width: 100%;
-    position: absolute;
-    background-color: rgba(#000, 0.3);
-    padding: 10px;
-    bottom: 0;
+.main-text {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(#000, 0.3);
+  padding: 10px;
+  bottom: 0;
 
-    h3{
-        font-weight: normal;
+  h3 {
+    font-weight: normal;
+  }
+
+  h3,
+  h1 {
+    color: rgba(#fff, 0.9);
+  }
+}
+
+.options {
+  text-align: right;
+  padding: 15px 0;
+  padding: 1.5em 15em;
+
+  li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+}
+
+.buttons {
+  padding: 15px;
+  border: 1px solid $font-color;
+  border-radius: 20px;
+  color: $font-color;
+  background-color: #fff;
+
+  &:hover {
+    background-color: $font-color;
+    color: #fff;
+  }
+}
+
+.first-section {
+  background-color: $light-gray-bkg;
+}
+
+.img-box {
+  padding: 1em;
+  margin-top: 1em;
+  @include clearfix;
+
+  img {
+    width: 30%;
+    border-radius: 50%;
+  }
+
+  .hidden-text {
+    width: 69%;
+    text-align: center;
+    margin-top: 15%;
+    display: none;
+
+    h4 {
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $main-red;
+    }
+  }
+
+  &:hover {
+    .hidden-text {
+      display: inline-block;
+    }
+  }
+}
+
+.img-box.left {
+  img {
+    float: left;
+  }
+
+  .hidden-text {
+    float: right;
+  }
+}
+
+.img-box.right {
+  img {
+    float: right;
+  }
+
+  .hidden-text {
+    float: left;
+  }
+}
+
+.pricing{
+    button{
+        display: none;
     }
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+
+  th,
+  td {
+    padding: 0.5em;
+  }
+
+  .gray,
+  .orange {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .orange {
+    background-color: $main-red;
+  }
+  .gray {
+    background-color: $dark-blue;
+  }
+  td,
+  .gray {
+    border: 1px solid $header-color;
+  }
+
+  td {
+    color: $font-color;
+  }
+}
