@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: #797979;
+}
+
+section {
+  padding: 3em 15em;
+  text-align: center;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+h2 {
+  color: #797979;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+header,
+footer {
+  background-color: #374249;
+}
+
+header:before, header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header ul {
+  list-style: none;
+  float: right;
+}
+header ul li {
+  display: inline-block;
+  padding: 12px;
+}
+header ul li:hover {
+  background-color: #cfd1d3;
+}
+header ul a {
+  color: #fff;
+  text-decoration: none;
+}
+header button {
+  float: right;
+  padding: 14px;
+  background-color: #f38181;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+header button:hover {
+  background-color: #cfd1d3;
+  color: #374249;
+}
+
+main {
+  background-image: url("../slike/intro.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.main-text {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  bottom: 0;
+}
+.main-text h3 {
+  font-weight: normal;
+}
+.main-text h3,
+.main-text h1 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.options {
+  text-align: right;
+  padding: 15px 0;
+  padding: 1.5em 15em;
+}
+.options li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.buttons {
+  padding: 15px;
+  border: 1px solid #797979;
+  border-radius: 20px;
+  color: #797979;
+  background-color: #fff;
+}
+.buttons:hover {
+  background-color: #797979;
+  color: #fff;
+}
+
+.first-section {
+  background-color: #f3f7f9;
+}
+
+.img-box {
+  padding: 1em;
+  margin-top: 1em;
+}
+.img-box:before, .img-box:after {
+  content: "";
+  display: table;
+}
+.img-box:after {
+  clear: both;
+}
+.img-box img {
+  width: 30%;
+  border-radius: 50%;
+}
+.img-box .hidden-text {
+  width: 69%;
+  text-align: center;
+  margin-top: 15%;
+  display: none;
+}
+.img-box .hidden-text h4 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.img-box .hidden-text p {
+  color: #f38181;
+}
+.img-box:hover .hidden-text {
+  display: inline-block;
+}
+
+.img-box.left img {
+  float: left;
+}
+.img-box.left .hidden-text {
+  float: right;
+}
+
+.img-box.right img {
+  float: right;
+}
+.img-box.right .hidden-text {
+  float: left;
+}
+
+.pricing button {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em auto 0;
+}
+table th,
+table td {
+  padding: 0.5em;
+}
+table .gray,
+table .orange {
+  font-weight: bold;
+  color: #fff;
+}
+table .orange {
+  background-color: #f38181;
+}
+table .gray {
+  background-color: #374249;
+}
+table td,
+table .gray {
+  border: 1px solid #374249;
+}
+table td {
+  color: #797979;
+}
+
+.contact {
+  background-color: #f3f7f9;
+}
+
+.map {
+  width: 30%;
+  float: left;
+}
+.map iframe {
+  width: 100%;
+}
+
+.foot-right {
+  text-align: right;
+  float: right;
+  margin-top: 5%;
+  width: 70%;
+  padding-left: 1em;
+}
+
+form {
+  background-color: #f38181;
+  border: none;
+  padding: 1em;
+}
+form select,
+form input,
+form textarea {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: none;
+}
+form select {
+  width: 27%;
+}
+form #name {
+  width: 70%;
+  margin-left: 1%;
+}
+form #email,
+form textarea {
+  width: 99%;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+}
+footer p span {
+  color: #f38181;
+}
+
+@media only screen and (max-width: 1150px) {
+  section,
+.options {
+    padding: 2em 8em;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header {
+    text-align: center;
+  }
+  header ul {
+    width: 100%;
+    text-align: center;
+  }
+  header ul li {
+    display: block;
+  }
+  header button {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  main {
+    background-image: none;
+    background-color: #000;
+    height: auto;
+  }
+
+  .main-text {
+    position: unset;
+  }
+
+  section {
+    padding: 1em;
+  }
+
+  .options {
+    padding: 1em 0.5em;
+    text-align: center;
+  }
+  .options ul {
+    margin: 0 auto;
+  }
+  .options li {
+    margin: 0 0.5em;
+  }
+  .options .buttons {
+    padding: 0.5em;
+  }
+
+  .img-box {
+    text-align: center;
+  }
+  .img-box img {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .img-box .hidden-text {
+    display: block;
+  }
+  .img-box .hidden-text h4 {
+    margin: 1em 0 0.5em;
+    font-size: 1em;
+  }
+  .img-box .hidden-text p {
+    font-size: 0.75em;
+  }
+
+  .img-box.left img,
+.img-box.right img {
+    float: unset;
+    margin: 5px auto;
+  }
+  .img-box.left .hidden-text,
+.img-box.right .hidden-text {
+    float: unset;
+    margin: 5px auto;
+  }
+
+  .pricing table {
+    display: none;
+  }
+  .pricing button {
+    padding: 10px;
+    margin: 1em auto;
+    display: block;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .foot-right {
+    display: block;
+    width: 100%;
+  }
+
+  .foot-right {
+    margin-top: 1em;
+    padding-left: 0;
+  }
+
+  form select,
+form #name {
+    width: 99%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
